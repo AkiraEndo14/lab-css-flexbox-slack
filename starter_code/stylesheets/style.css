@@ -5,3 +5,176 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*position: fixed;*/
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 15px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.slack-logo {
+    width: 100px;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.menu {
+    display: none;
+}
+
+/*header code goes from here */
+header {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 25px;
+}
+
+h1 {
+
+}
+
+header > p {
+
+}
+
+.home-talking {
+    width: 100%;
+}
+
+.email {
+    border: 1px solid lightgray;
+    border-radius: 4.5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.first-button {
+    border: 1px solid black;
+    width: 100%;
+    background-color: #4630FF;
+    color: white;
+    border-radius: 3.5px;
+    padding: 10px;
+}
+
+.btn {
+    text-align: center;
+}
+
+
+/*main goes form here*/
+
+main {
+    display: flex;
+    background-color: #EBEBEB;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 25px;
+}
+
+.first-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+   
+}
+
+.discover_button {
+    background-color: white;
+    color: blue;
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 3.5px;
+    padding: 10px;
+}
+
+.second-part {
+    
+}
+
+.second-part img {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #BABABA;
+    padding: 35px 0px
+}
+
+
+.third-part p {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+    text-align: center
+}
+
+
+
+/*foot goes from here*/
+footer {
+    padding: 0px 25px;
+}
+.slack-icon {
+    width: 25%;
+}
+
+.forth-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.list ul {
+    list-style-type: none;
+
+}
+
+.top {
+    font:;
+}
+
+
+@media (min-width: 960px) {
+    .hamburger-icon {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .menu > p {
+        margin-right: 10px;
+    }
+    .menu > div {
+        border: 1px solid black;
+        border-radius: 3.5px;
+        padding: 5px 10px;
+    }
+    .menu > div > p {
+        margin: 0;
+    }
+}
