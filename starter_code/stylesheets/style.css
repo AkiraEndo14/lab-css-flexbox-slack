@@ -18,7 +18,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
+    position: fixed;
+    top: 0;
     border-bottom: 1px solid black;
     width: 100%;
     background-color: #fff;
@@ -47,8 +48,8 @@ header {
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
     padding: 0px 25px;
+    margin-top: 70px;
 }
 
 h1 {
@@ -69,6 +70,7 @@ header > p {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .first-button {
@@ -99,8 +101,8 @@ main {
 .first-part {
     display: flex;
     flex-direction: column;
-    text-align: center
-   
+    text-align: center;
+    padding: 10px 0;
 }
 
 .discover_button {
@@ -113,32 +115,55 @@ main {
 }
 
 .second-part {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    font-size: 1px solid #bababa;
+    width: 100%;
 }
 
 .second-part img {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #BABABA;
+    width: 45%;
     padding: 35px 0px
 }
 
+.company_ticketmaster {
+    margin-bottom: 10px;
+}
 
-.third-part p {
+
+.third-part {
     display: flex;
     flex-direction: column;
     padding: 0px 25px;
-    text-align: center
+    text-align: center;
+    margin-top: 30px;
 }
 
+.third-part :first-child {
+    margin-bottom: 0;
+}
+
+.sign-in {
+    margin-top: 5px;  
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.format :last-child {
+    margin-bottom: 30px;
+}
 
 
 /*foot goes from here*/
-footer {
-    padding: 0px 25px;
-}
 .slack-icon {
     width: 25%;
 }
@@ -148,13 +173,193 @@ footer {
     flex-direction: column;
 }
 
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+
 .list ul {
     list-style-type: none;
-
+    padding: 0;
+    margin: 10px;
+    min-width: 110px;
+    min-width: 42%;
+    box-sizing: border-box;
 }
 
 .top {
     font:;
+}
+
+.fifth-part {
+    display: flex;
+    flex-direction: column;
+    background-color: #bababa;
+}
+
+.reference {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0 25px;
+}
+
+.flag {
+    width: 7%;
+}
+
+.sixth-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sixth-part > span {
+    margin: 0 3%;
+}
+
+.sns-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 2%;
+}
+
+.fab {
+    margin: 0 5px;
+
+}
+
+@media (min-width: 767px) {
+  header {
+      padding: 0px 30px;
+      width: 100%;
+  }
+  h1 {
+      font-size: 50px;
+  }
+
+  header > p {
+      font-size: 25px;
+      margin-top: 0px;
+      letter-spacing: 1px;
+  }
+  .header-format {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        height: 50px;
+  }
+  .email {
+    width: 45%;
+    margin-right: 2%;
+    margin-bottom: 0
+  }
+  .first-button {
+    width: 20%;
+  }
+
+  .sign-in {
+      display: flex;
+      align-items: flex-start;
+      font-size: 15px;
+      margin-top: 15px;
+
+  }
+
+  .home-talking {
+      width: 55%;
+      margin: auto;
+      margin-top: 15px;
+  }
+
+  .discover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+  }
+
+  .discover_button {
+      margin: auto;
+      width: 25%;
+      height: 50px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .first-part > p {
+    font-size: 23px;
+    text-align: start;
+    margin: auto;
+    padding: 5px 10px;
+  }
+  
+  .second-part {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+
+  .second-part img {
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px 16px;
+    margin: auto;
+    max-width: 35%;
+  }
+
+  .company_oracle {
+    padding-bottom: 10px;
+  }
+
+  .company_ticketmaster {
+    padding-bottom: 10px;
+  }
+
+  .second-part hr {
+      display: none;
+  }
+  .get-started {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 23px 0;
+  }
+
+  .third-part {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33%;
+    margin-top: 0;
+  }
+ 
+  .try-it {
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  .format :last-child {
+    margin-bottom: 0;
+  }
+
+  .format {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      height: 50px;
+  }
+
 }
 
 
